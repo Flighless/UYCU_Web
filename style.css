@@ -1,3 +1,46 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oregano&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+:root {
+    /* Colours */
+    --colourWhite: #fff;
+    --darkColour: #3F403F;
+    --primaryColour: #475841;
+    --secondaryColour: #C78283;
+    --lightGreen: #B7C6B2;
+    --whiteGreen: #D6E0D4;
+
+    /* Font Size */
+    --fontSizeS: 0.9rem;
+    --fontSizeN: 1rem;
+    --fontSizeM: 1.12rem;
+    --fontSizeL: 1.5rem;
+    --fontSizeXL: 2rem;
+    --fontSizeXXL: 2.3rem;
+
+    /* Font Weight */
+    --fontWeightNormal: 400;
+    --fontWeightMedium: 500;
+    --fontWeightSemiBold: 600;
+    --fontWeightBold: 700;
+
+    /* Border Radius */
+    --borderRadS: 8px;
+    --borderRadM: 30px;
+    --borderRadCircle: 50%;
+
+    /* Site Max Width */
+    --siteMaxWidth: 1300px; 
+
+}
+
 /* Header list styles */
 header ul {
     display: flex;
