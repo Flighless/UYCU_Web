@@ -1,0 +1,14 @@
+/* Header list styles */
+header ul {
+    display: flex;
+    justify-content: space-between; /* Optional: Distribute items evenly */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Make the list take the full width of the screen */
+}
+
+header ul li {
+    flex: 1; /* Make each list item take equal space */
+    text-align: center; /* Center the text inside each list item */
+}
