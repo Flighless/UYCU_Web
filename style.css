@@ -38,7 +38,6 @@
 
     /* Site Max Width */
     --siteMaxWidth: 1300px; 
-
 }
 
 /* General Styling */
@@ -105,28 +104,44 @@ header .navbar {
     background: var(--secondaryColour);
 }
 
+/* Hero Section Styling */
 .heroSection {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
     min-height: 100vh;
+    width: 100%;             
     background: var(--primaryColour);
+    text-align: center;
+    padding: 0, 20px;       
 }
 
 .heroSection .sectionContent {
     display: flex;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: center;  
+    align-items: center;      
+    gap: 40px;                
+    width: 100%;              
+    max-width: var(--siteMaxWidth);
+    margin: 0, auto;           
     color: var(--whiteGreen);
-    justify-content: space-between;
+    text-align: center;
+}
+
+.heroSection .sectionContent .heroDetails {
+    max-width: 800px;         /* Limit the width of the text content */
+    text-align: center;
 }
 
 .heroSection .sectionContent .heroDetails .title {
-    margin-top: 100px;
+    margin-top: 0px;
     font-size: var(--fontSizeXXL);
     color: var(--secondaryColour);
     font-family: "Lexend", sans-serif;
 }
 
 .heroSection .sectionContent .heroDetails .subtitle {
-    margin: 10px, 0px, 20px;
+    margin: 10px;
     max-width: 60%;
     font-size: var(--fontSizeM);
     font-weight: var(--fontWeightSemiBold);
@@ -139,7 +154,7 @@ header .navbar {
 
 .heroSection .sectionContent .heroDetails .button {
     margin: 100px, 0px, 20px;
-    padding: 5px 10px;
+    padding: 5px, 10px;
     border: 2px solid transparent;
     color: var(--primaryColour);
     border-radius: var(--borderRadM);
@@ -147,8 +162,163 @@ header .navbar {
     font-weight: var(--fontWeightMedium);
 }
 
-.heroSection .sectionContent .heroDetails .heroImgWrapper {
-    max-width: 500px;
-    margin-right: 30px;
+.heroSection .sectionContent .heroImgWrapper {
+    max-width: 300px;
+    margin: 0;                
+    display: block;
+}
+
+/* About Section Styling */
+.aboutSection {
+    padding: 80px, 0px;
+    background: var(--whiteGreen);
+    color: var(--darkColour);
+}
+
+.aboutSection .sectionTitle {
+    font-size: var(--fontSizeXXL);
+    font-size: var(--fontSizeXL);
+    margin-bottom: 20px;
+    font-weight: var(--fontWeightBold);
+    color: var(--primaryColour);
+}
+
+.aboutSection .aboutText {
+    font-size: var(--fontSizeM);
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Contact Section Styling */
+.contactSection {
+    padding: 120px;
+    background: var(--whiteGreen);
+    color: var(--darkColour);
+    text-align: center;
+}
+
+.contactSection .sectionTitle {
+    font-size: var(--fontSizeXXL);
+    font-weight: var(--fontWeightBold);
+    color: var(--primaryColour);
+    margin-bottom: 30px;
+}
+
+.contactSection .contactInfo {
+    margin-bottom: 40px;
+    font-size: var(--fontSizeM);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactSection .contactInfo h3 {
+    font-size: var(--fontSizeL);
+    font-weight: var(--fontWeightMedium);
+    margin-bottom: 20px;
+}
+
+.contactSection .contactInfo p {
+    margin-bottom: 10px;
+}
+
+.contactSection .contactInfo ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contactSection .contactInfo ul li {
+    font-size: var(--fontSizeS);
+}
+
+.contactSection .contactInfo a {
+    color: var(--primaryColour);
+    text-decoration: none;
+}
+
+.contactSection .contactForm {
+    margin-top: 40px;
+}
+
+.contactSection .contactForm h3 {
+    font-size: var(--fontSizeL);
+    font-weight: var(--fontWeightMedium);
+    margin-bottom: 20px;
+}
+
+.contactSection .contactForm .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactSection .contactForm label {
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightMedium);
+    text-align: left;
+}
+
+.contactSection .contactForm input,
+.contactSection .contactForm textarea {
+    padding: 10px;
+    font-size: var(--fontSizeM);
+    border: 2px solid var(--primaryColour);
+    border-radius: var(--borderRadS);
+}
+
+.contactSection .contactForm button {
+    padding: 12px 25px;
+    background: var(--primaryColour);
+    color: var(--whiteGreen);
+    border: none;
+    border-radius: var(--borderRadM);
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactSection .contactForm button:hover {
+    color: var(--primaryColour);
+    background: var(--secondaryColour);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--primaryColour);
+    color: var(--whiteGreen);
+    padding: 40px 0;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footerLeft h3 {
+    font-size: var(--fontSizeL);
+    margin-bottom: 10px;
+}
+
+.footerSocialLinks {
+    display: flex;
+    gap: 15px;
     margin-top: 10px;
 }
+
+.footerSocialLinks .socialIcon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footerSocialLinks .socialIcon:hover {
+    transform: scale(1.1);
+}
+
