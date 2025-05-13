@@ -10,7 +10,7 @@
 
 :root {
     /* Colours */
-    --colourWhite: #fff;
+    --colourWhite: #ffffff;
     --darkColour: #3F403F;
     --primaryColour: #475841;
     --secondaryColour: #C78283;
@@ -41,7 +41,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light-mode) {
     --primaryColour: #8FBC8F;
     --secondaryColour: #FFB6B6;
     --whiteGreen: #F2F2F7;
@@ -59,6 +59,22 @@
 }
 
 /* General Styling */
+body.dark-mode {
+  --primaryColour: #0d0d0d;        /* Very dark background for header/nav */
+  --secondaryColour: #1f1f1f;      /* Slight contrast, still very dark */
+  --whiteGreen: #eaeaea;           /* Light text */
+  --darkColour: #000000;           /* True black for main background */
+  --lightGreen: #1a1a1a;           /* Section backgrounds (slight contrast) */
+
+  --bgDark: #000000;               /* Page background */
+  --bgSurface: #111111;            /* Surface elements like cards */
+  --textLight: #f5f5f5;            /* Main body text */
+  --textMuted: #999999;            /* Subtext or muted labels */
+  --borderDark: #2a2a2a;           /* Border lines */
+  --hoverDark: #222222;            /* Button hover background */
+  --linkDark: #33b5e5;             /* Accent for links (bright blue) */
+}
+
 ul {
     list-style: none;
 }
@@ -120,6 +136,15 @@ header .navbar {
 .navbar .navItems .navLink:hover {
     color: var(--primaryColour);
     background: var(--secondaryColour);
+}
+.navbar .navItems .themeButton .themeIcon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.navbar .navItems .themeButton .themeIcon:hover {
+    transform: scale(1.1);
 }
 
 /* Hero Section Styling */
