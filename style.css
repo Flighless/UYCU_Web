@@ -40,6 +40,24 @@
     --siteMaxWidth: 1300px; 
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primaryColour: #8FBC8F;
+    --secondaryColour: #FFB6B6;
+    --whiteGreen: #F2F2F7;
+    --darkColour: #1C1C1E;
+    --lightGreen: #2C2C2E;
+
+    --bgDark: #1C1C1E;
+    --bgSurface: #2C2C2E;
+    --textLight: #F2F2F7;
+    --textMuted: #A1A1AA;
+    --borderDark: #3A3A3C;
+    --hoverDark: #3E4E3E;
+    --linkDark: #9AD1D4;
+  }
+}
+
 /* General Styling */
 ul {
     list-style: none;
@@ -105,7 +123,7 @@ header .navbar {
 }
 
 /* Hero Section Styling */
-.heroSection {
+.mainheroSection {
     display: flex;
     justify-content: center;  
     align-items: center;      
@@ -116,7 +134,7 @@ header .navbar {
     padding: 0, 20px;       
 }
 
-.heroSection .sectionContent {
+.mainheroSection .sectionContent {
     display: flex;
     justify-content: center;  
     align-items: center;      
@@ -128,31 +146,31 @@ header .navbar {
     text-align: center;
 }
 
-.heroSection .sectionContent .heroDetails {
+.mainheroSection .sectionContent .heroDetails {
     max-width: 800px;         /* Limit the width of the text content */
     text-align: center;
 }
 
-.heroSection .sectionContent .heroDetails .title {
+.mainheroSection .sectionContent .heroDetails .title {
     margin-top: 0px;
     font-size: var(--fontSizeXXL);
     color: var(--secondaryColour);
     font-family: "Lexend", sans-serif;
 }
 
-.heroSection .sectionContent .heroDetails .subtitle {
+.mainheroSection .sectionContent .heroDetails .subtitle {
     margin: 10px;
     max-width: 60%;
     font-size: var(--fontSizeM);
     font-weight: var(--fontWeightSemiBold);
 }
 
-.heroSection .sectionContent .heroDetails .buttons {
+.mainheroSection .sectionContent .heroDetails .buttons {
     display: flex;
     /* margin: 100px, 0px, 20px; */
 }
 
-.heroSection .sectionContent .heroDetails .button {
+.mainheroSection .sectionContent .heroDetails .button {
     margin: 100px, 0px, 20px;
     padding: 5px, 10px;
     border: 2px solid transparent;
@@ -162,7 +180,7 @@ header .navbar {
     font-weight: var(--fontWeightMedium);
 }
 
-.heroSection .sectionContent .heroImgWrapper {
+.mainheroSection .sectionContent .heroImgWrapper {
     max-width: 300px;
     margin: 0;                
     display: block;
