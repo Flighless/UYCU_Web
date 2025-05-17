@@ -365,3 +365,50 @@ header .navbar {
     transform: scale(1.1);
 }
 
+.notImplementedSection {
+    padding: 120px;
+    padding-top: 220px;
+    padding-bottom: 250px;
+    background: var(--whiteGreen);
+    color: var(--darkColour);
+    text-align: center;
+}
+
+.notImplementedSection .sectionTitle {
+    font-size: var(--fontSizeXXL);
+    font-weight: var(--fontWeightBold);
+    color: var(--primaryColour);
+    margin-bottom: 30px;
+}
+
+.notImplementedSection .goBack {
+    margin-bottom: 20px;
+    font-size: var(--fontSizeM);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.notImplementedSection .goBack h3 {
+    font-size: var(--fontSizeL);
+    font-weight: var(--fontWeightMedium);
+    margin-bottom: 20px;
+}
+
+.notImplementedSection .goBack .homeButton {
+    padding:6px 20px;
+    background: var(--primaryColour);
+    color: var(--whiteGreen);
+    border: none;
+    border-radius: var(--borderRadM);
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notImplementedSection .goBack .homeButton:hover {
+    color: var(--whiteGreen);
+    background: var(--secondaryColour);
+}
+
+
