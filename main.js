@@ -20,3 +20,18 @@ window.addEventListener("DOMContentLoaded", () => {
         themeToggleButton.textContent = "Toggle Light Mode";
     }
 });
+
+
+window.addEventListener("scroll", function () {
+    var element = document.quesrySelector('.scrolling-element');
+    var position = element.getBoundingClientRect();
+
+    // Checking if the element is visible
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        // Element is visible
+        element.classList.add('visible');
+    } else {
+        // Element is not visible
+        element.classList.remove('visible');
+    }
+})
