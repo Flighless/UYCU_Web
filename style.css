@@ -223,7 +223,8 @@ header .navbar {
 
 /* About Section Styling */
 .aboutSection {
-    padding: 80px, 0px;
+    padding: 100px, 20px;
+    text-align: center;
     background: var(--whiteGreen);
     color: var(--darkColour);
 }
@@ -237,6 +238,8 @@ header .navbar {
 }
 
 .aboutSection .aboutText {
+    margin: 0 auto;
+    text-align: center;
     font-size: var(--fontSizeM);
     line-height: 1.5;
     max-width: 800px;
