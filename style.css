@@ -123,6 +123,7 @@ header .navbar {
 
 .navbar .navItems{
     display: flex;
+    flex-grow: 1;
     gap: 10px;
 }
 
@@ -238,6 +239,29 @@ header .navbar {
 }
 
 .aboutSection .aboutText {
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--fontSizeM);
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.eventsSection {
+    padding: 100px, 20px;
+    text-align: center;
+    background: var(--whiteGreen);
+    color: var(--darkColour);
+}
+
+.eventsSection .sectionTitle {
+    font-size: var(--fontSizeXXL);
+    font-size: var(--fontSizeXL);
+    margin-bottom: 20px;
+    font-weight: var(--fontWeightBold);
+    color: var(--primaryColour);
+}
+
+.eventsSection .aboutText {
     margin: 0 auto;
     text-align: center;
     font-size: var(--fontSizeM);
