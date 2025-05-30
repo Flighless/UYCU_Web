@@ -123,6 +123,7 @@ header .navbar {
 
 .navbar .navItems{
     display: flex;
+    right: 0px;
     flex-grow: 1;
     gap: 10px;
 }
@@ -166,7 +167,7 @@ header .navbar {
     display: flex;
     justify-content: center;  
     align-items: center;      
-    gap: 20px;                
+    gap: 70px;                
     width: 100%;              
     max-width: var(--siteMaxWidth);
     margin: 0, auto;           
@@ -175,7 +176,7 @@ header .navbar {
 }
 
 .mainheroSection .sectionContent .heroDetails {
-    max-width: 1300px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -188,8 +189,9 @@ header .navbar {
 }
 
 .mainheroSection .sectionContent .heroDetails .subtitle {
-    margin: 10px auto;
-    max-width: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 10px;;
     font-size: var(--fontSizeL);
     font-weight: var(--fontWeightSemiBold);
 }
@@ -218,13 +220,14 @@ header .navbar {
 
 .mainheroSection .sectionContent .heroImgWrapper {
     max-width: 300px;
-    margin: 0;                
+    margin: 80px;                
     display: block;
 }
 
 /* About Section Styling */
 .aboutSection {
-    padding: 100px, 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     background: var(--whiteGreen);
     color: var(--darkColour);
@@ -233,7 +236,7 @@ header .navbar {
 .aboutSection .sectionTitle {
     font-size: var(--fontSizeXXL);
     font-size: var(--fontSizeXL);
-    margin-bottom: 20px;
+    margin: 20px;
     font-weight: var(--fontWeightBold);
     color: var(--primaryColour);
 }
@@ -244,10 +247,12 @@ header .navbar {
     font-size: var(--fontSizeM);
     line-height: 1.5;
     max-width: 800px;
+    margin-bottom: 20px;
 }
 
 .eventsSection {
-    padding: 100px, 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
     background: var(--whiteGreen);
     color: var(--darkColour);
@@ -267,6 +272,7 @@ header .navbar {
     font-size: var(--fontSizeM);
     line-height: 1.5;
     max-width: 800px;
+    margin-bottom: 20px;
 }
 
 /* Contact Section Styling */
@@ -445,5 +451,166 @@ header .navbar {
 
 .notImplementedSection .goBack .homeButton:hover {
     color: var(--whiteGreen);
+    background: var(--secondaryColour);
+}
+
+.signInSection {
+    padding: 120px;
+    background: var(--whiteGreen);
+    color: var(--darkColour);
+    text-align: center;
+}
+
+.signInSection .sectionTitle {
+    font-size: var(--fontSizeXXL);
+    font-weight: var(--fontWeightBold);
+    color: var(--primaryColour);
+    margin-bottom: 15px;
+}
+
+.signInSection .signInInfo {
+    margin-bottom: 40px;
+    font-size: var(--fontSizeM);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.signInSection .signInInfo p {
+    margin-bottom: 10px;
+}
+
+.signInSection .signInInfo ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.signInSection .signInInfo ul li {
+    font-size: var(--fontSizeS);
+}
+
+.signInSection .signInInfo a {
+    color: var(--primaryColour);
+    text-decoration: none;
+}
+
+.signInSection .logInForm {
+    margin-top: 40px;
+}
+
+.signInSection .logInForm .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.signInSection .logInForm label {
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightMedium);
+    text-align: left;
+}
+
+.signInSection .logInForm input,
+.signInSection .logInForm textarea {
+    padding: 10px;
+    font-size: var(--fontSizeM);
+    border: 2px solid var(--primaryColour);
+    border-radius: var(--borderRadS);
+}
+
+.signInSection .logInForm button {
+    padding: 12px 25px;
+    background: var(--primaryColour);
+    color: var(--whiteGreen);
+    border: none;
+    border-radius: var(--borderRadM);
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signInSection .logInForm button:hover {
+    color: var(--primaryColour);
+    background: var(--secondaryColour);
+}
+
+.signInSection .logInForm .buttonLink {
+    padding: 12px 25px;
+    background: var(--primaryColour);
+    color: var(--whiteGreen);
+    border: none;
+    border-radius: var(--borderRadM);
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signInSection .logInForm .buttonLink:hover {
+    color: var(--primaryColour);
+    background: var(--secondaryColour);
+}
+
+.signInSection .signUpForm {
+    margin-top: 40px;
+}
+
+.signInSection .signUpForm .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.signInSection .signUpForm label {
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightMedium);
+    text-align: left;
+}
+
+.signInSection .signUpForm input,
+.signInSection .signUpForm textarea {
+    padding: 10px;
+    font-size: var(--fontSizeM);
+    border: 2px solid var(--primaryColour);
+    border-radius: var(--borderRadS);
+}
+
+.signInSection .signUpForm button {
+    padding: 12px 25px;
+    background: var(--primaryColour);
+    color: var(--whiteGreen);
+    border: none;
+    border-radius: var(--borderRadM);
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signInSection .signUpForm button:hover {
+    color: var(--primaryColour);
+    background: var(--secondaryColour);
+}
+
+.signInSection .signUpForm .buttonLink {
+    padding: 12px 25px;
+    background: var(--primaryColour);
+    color: var(--whiteGreen);
+    border: none;
+    border-radius: var(--borderRadM);
+    font-size: var(--fontSizeM);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signInSection .signUpForm .buttonLink:hover {
+    color: var(--primaryColour);
     background: var(--secondaryColour);
 }

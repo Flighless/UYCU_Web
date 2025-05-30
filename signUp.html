@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - University of York Society</title>
+    <title>Sign Up - Univeristy of York Society</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,34 +22,33 @@
             </ul>
         </nav>
     </header>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contactSection">
-        <div class="sectionContent">
-            <h2 class="sectionTitle">Contact Us</h2>
 
-            <div class="contactInfo">
-                <h3>Get in Touch</h3>
-                <p>If you have any questions or would like to get in touch with us, feel free to fill out the form or reach out to us directly:</p>
+     <!-- Contact Section -->
+    <section id="signIn" class="signInSection">
+        <div class="sectionContent">
+            <h2 class="sectionTitle">Sign Up</h2>
+
+            <div class="signInInfo">
+
+                <p>If you have difficulties, please email:</p>
                 <ul>
                     <li>Email: <a href="mailto:example@yorksu.org">example@yorksu.org</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/yorkunisu" target="_blank">@yorkunisu</a></li>
                 </ul>
             </div>
 
-            <div class="contactForm">
-                <h3>Send Us a Message</h3>
-                <form action="#" method="POST" class="form" id="contactForm">
+            <div class="signUpForm">
+                <form action="#" method="POST" class="form" id="signUpForm">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password1!"></textarea>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Write your message here"></textarea>
-
-                    <button type="submit">Send Message</button>
+                    <button type="submit">Sign Up</button>
+                    <a href="logIn.html" class="buttonLink">Log In</a>
                 </form>
             </div>
         </div>
@@ -72,6 +71,6 @@
         </div>
     </footer>
 
-    <script src="contactPage.js"></script>
+    <script src="signUp.js"></script>
 </body>
 </html>
