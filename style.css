@@ -78,6 +78,7 @@ body.dark-mode {
   --linkDark: #33b5e5;             /* Accent for links (bright blue) */
 }
 
+/* Animations for All Pages */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -256,6 +257,7 @@ header .navbar {
     display: block;
 }
 
+
 /* About Section Styling */
 .aboutSection {
     padding: 60px 20px;
@@ -306,6 +308,7 @@ header .navbar {
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Events Section Styling */
 .eventsSection {
     padding: 60px 20px;
     background: var(--whiteGreen);
@@ -369,7 +372,7 @@ header .navbar {
     height: 300px;
     object-fit: cover;
     border-radius: 20%;
-    box-shadow: 0, 4px, 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
     animation: fadeIn 1s ease-in-out;
 }
@@ -380,6 +383,10 @@ header .navbar {
     background: var(--whiteGreen);
     color: var(--darkColour);
     text-align: center;
+}
+
+.contactSection .sectionContent {
+    animation: fadeIn 1s ease-in-out;
 }
 
 .contactSection .sectionTitle {
@@ -502,7 +509,7 @@ header .navbar {
     height: 30px;
     animation-duration: 3s;
     animation-name: spin;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
@@ -511,20 +518,26 @@ header .navbar {
     animation-play-state: running;
 }
 
+/* Not Implementend Page */
 .notImplementedSection {
-    padding: 120px;
-    padding-top: 220px;
-    padding-bottom: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background: var(--whiteGreen);
     color: var(--darkColour);
     text-align: center;
+}
+
+.notImplementedSection .sectionContent {
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .notImplementedSection .sectionTitle {
     font-size: var(--fontSizeXXL);
     font-weight: var(--fontWeightBold);
     color: var(--primaryColour);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .notImplementedSection .goBack {
@@ -537,7 +550,7 @@ header .navbar {
 .notImplementedSection .goBack h3 {
     font-size: var(--fontSizeL);
     font-weight: var(--fontWeightMedium);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .notImplementedSection .goBack .homeButton {
@@ -557,11 +570,16 @@ header .navbar {
     background: var(--secondaryColour);
 }
 
+/* Login / Sign up Page Styling */
 .signInSection {
     padding: 120px;
     background: var(--whiteGreen);
     color: var(--darkColour);
     text-align: center;
+}
+
+.signInSection .sectionContent {
+    animation: fadeIn 1s ease-in-out;
 }
 
 .signInSection .sectionTitle {
@@ -718,12 +736,17 @@ header .navbar {
     background: var(--secondaryColour);
 }
 
-
+/* Admin Page Styling */
 .adminSection {
     padding: 120px;
     background: var(--whiteGreen);
     color: var(--darkColour);
     text-align: center;
+    min-height: 90vh;
+}
+
+.adminSection .sectionContent {
+    animation: fadeIn 1s ease-in-out;
 }
 
 .adminSection .sectionTitle {
