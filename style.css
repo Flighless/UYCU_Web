@@ -25,8 +25,6 @@
     --fontSizeXL: 2rem;
     --fontSizeXXL: 2.3rem;
     --fontSizeXXXL: 3rem;
-    --fontSizeXXXXL: 4rem;
-    --fontSizeHero: 5rem;
 
     /* Font Weight */
     --fontWeightNormal: 400;
@@ -40,10 +38,10 @@
     --borderRadCircle: 50%;
 
     /* Site Max Width */
-    --siteMaxWidth: 1300px; 
+    --siteMaxWidth: 1200px; 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root:not(.light-mode) {
     --primaryColour: #8FBC8F;
     --secondaryColour: #FFB6B6;
@@ -59,24 +57,8 @@
     --hoverDark: #3E4E3E;
     --linkDark: #9AD1D4;
   }
-}
+} */
 
-/* General Styling */
-body.dark-mode {
-  --primaryColour: #0d0d0d;        /* Very dark background for header/nav */
-  --secondaryColour: #1f1f1f;      /* Slight contrast, still very dark */
-  --whiteGreen: #eaeaea;           /* Light text */
-  --darkColour: #000000;           /* True black for main background */
-  --lightGreen: #1a1a1a;           /* Section backgrounds (slight contrast) */
-
-  --bgDark: #000000;               /* Page background */
-  --bgSurface: #111111;            /* Surface elements like cards */
-  --textLight: #f5f5f5;            /* Main body text */
-  --textMuted: #999999;            /* Subtext or muted labels */
-  --borderDark: #2a2a2a;           /* Border lines */
-  --hoverDark: #222222;            /* Button hover background */
-  --linkDark: #33b5e5;             /* Accent for links (bright blue) */
-}
 
 /* Animations for All Pages */
 @keyframes fadeInUp {
@@ -106,6 +88,23 @@ body.dark-mode {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* General Styling */
+body.dark-mode {
+    --primaryColour: #8FBC8F;
+    --secondaryColour: #FFB6B6;
+    --whiteGreen: #F2F2F7;
+    --darkColour: #1C1C1E;
+    --lightGreen: #2C2C2E;
+
+    --bgDark: #1C1C1E;
+    --bgSurface: #2C2C2E;
+    --textLight: #F2F2F7;
+    --textMuted: #A1A1AA;
+    --borderDark: #3A3A3C;
+    --hoverDark: #3E4E3E;
+    --linkDark: #9AD1D4;            
 }
 
 ul {

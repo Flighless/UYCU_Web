@@ -1,2 +1,2 @@
-# UYCU_Web
- UYCU Website Github Repo
+# UYS_Web
+ UYS Website Github Repo

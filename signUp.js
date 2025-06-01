@@ -10,5 +10,5 @@ signUpForm.addEventListener("submit", (event) => {
    
     signUpForm.reset();
     alert("Sign Up Successful!");
-    window.location.href = "admin.html";
+    window.location.href = "logIn.html";
 });
