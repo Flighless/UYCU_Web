@@ -3,12 +3,11 @@ const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 if (currentUser !== null) {
     sectionTitle.innerText = `Welcome back ${currentUser.name}!`;
 } else {
-
     sectionTitle.innerHTML = "Something has gone wrong! <a href='logIn.html'>Please Login Again...</a>.";
 }
 
 const contactFormData = JSON.parse(localStorage.getItem("contactFormData")) || [];
-const contactFormList = document.getElementById("messageList"); // <- updated ID
+const contactFormList = document.getElementById("messageList");
 
 if (contactFormData.length > 0) {
     contactFormList.innerHTML = contactFormData.map((data, index) => `
@@ -22,3 +21,6 @@ if (contactFormData.length > 0) {
 } else {
     contactFormList.innerHTML = "<p>No contact form submissions yet.</p>";
 }
+
+
+

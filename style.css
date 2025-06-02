@@ -11,6 +11,7 @@
 :root {
     /* Colours */
     --colourWhite: #ffffff;
+    --colourBlack: #000000;
     --darkColour: #3F403F;
     --primaryColour: #475841;
     --secondaryColour: #C78283;
@@ -302,7 +303,7 @@ header .navbar {
     height: 300px;
     object-fit: cover;
     border-radius: 20%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px var(--secondaryColour);
     flex-shrink: 0;
     animation: fadeIn 1s ease-in-out;
 }
@@ -371,7 +372,7 @@ header .navbar {
     height: 300px;
     object-fit: cover;
     border-radius: 20%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px var(--secondaryColour);
     flex-shrink: 0;
     animation: fadeIn 1s ease-in-out;
 }
@@ -759,15 +760,15 @@ header .navbar {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: var(--whiteGreen);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px var(--secondaryColour);
 }
 
 .adminSection .message {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-left: 4px solid #007BFF;
+  background-color: var(--colourWhite);
+  border: 1px solid var(--whiteGreen);
+  border-left: 4px solid var(--secondaryColour);
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -775,19 +776,15 @@ header .navbar {
 }
 
 .adminSection .message:hover {
-  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 2px 8px var(--secondaryColour);
 }
 
 .adminSection .message strong {
   font-size: 1.1rem;
-  color: #007BFF;
+  color: var(--primaryColour);
 }
 
 .adminSection .message p {
   margin: 0.4rem 0;
-  color: #333;
-}
-
-.adminSection .message p strong {
-  color: #555;
+  color: var(--colourBlack);
 }

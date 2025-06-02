@@ -1,3 +1,8 @@
+// This code is based upon an output from ChaptGPT
+// Author: OpenAI's ChatGPT
+// Location: https://chatgpt.com/
+// Accessed: 30/05/2025
+
 const logInForm = document.getElementById("logInForm");
 logInForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevents the page from refreshing
